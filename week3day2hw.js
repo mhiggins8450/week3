@@ -1,3 +1,4 @@
+// CREATED CLASS W/O CONSTRUCTOR
 // class Cat {
 //     name = 'snowball'
 //     age = 6
@@ -29,21 +30,33 @@
 // lion.purr();
 // lion.eat();
 
-
-// class Cat {
-//     constructor(eyes, legs, fur, color, age) { //five properties
-//         this.eyes = eyes;
-//         this.legs = legs;
-//         this.fur = fur;
-//         this.age = age;
-//         this.color = color; //five methods
+// CREATED CLASS W/ CONSTRUCTOR
+// class Pirate {
+//     constructor(hook, pegleg, patch) { 
+//         this.hook = hook;
+//         this.pegleg = pegleg;
+//         this.patch = patch;
 //     }
 // }
 
-// const sphynx = new Cat(2, 4, false, 'translucent', 5) //instance #1
-// const cheetah = new Cat(2, 4, true, 'spotted', 10) //instance #2
-
-// console.log(sphynx)
-// //Cat { eyes: 2, legs: 4, fur: false, age: 5, color: 'translucent' }
-// console.log(cheetah)
-// // Cat { eyes: 2, legs: 4, fur: true, age: 10, color: 'spotted' }
+// const jollyRoger = [
+//     new Pirate(true, false, false),
+//     new Pirate(false, true, false),
+//     new Pirate(false, true, true),
+//   ];
+  
+//   const blackPearl = [
+//     new Pirate(false, true, true),
+//     new Pirate(true, false, true),
+//     new Pirate(true, false, true),
+//   ];
+  
+//   console.log("Jolly Roger Pirates:");
+//   jollyRoger.forEach((pirate, index) => {
+//     console.log(`Pirate ${index + 1}: Hook - ${pirate.hook}, Pegleg - ${pirate.pegleg}, Patch - ${pirate.patch}`);
+//   });
+  
+//   console.log("Black Pearl Pirates:");
+//   blackPearl.forEach((pirate, index) => {
+//     console.log(`Pirate ${index + 1}: Hook - ${pirate.hook}, Pegleg - ${pirate.pegleg}, Patch - ${pirate.patch}`);
+//   });
