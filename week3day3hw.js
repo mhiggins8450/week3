@@ -18,58 +18,50 @@
 
 
 //INHERITANCE
-// class Person {
-//     constructor(name, age, eyeColor) {
-//         this.name = name
-//         this.age = age
-//         this.eyeColor = eyeColor
-//     }
-// }
+class Person {
+    constructor(name, age, eyeColor) {
+        this.name = name
+        this.age = age
+        this.eyeColor = eyeColor
+    }
+}
 
-// class PostalWorker extends Person {
+class PostalWorker extends Person {
+    constructor(name, age, eyeColor, hairColor) {
+        super(name, age, eyeColor);
+        this.hairColor = hairColor
+    }
+}
 
-// }
+const worker1 = new PostalWorker(
+    "Denise",
+    29,
+    "brown", 'black'
+);
 
-// const usps = new PostalWorker(
-//     "Worker",
-//     29,
-//     "brown"
+// const worker2 = new PostalWorker(
+//     "Dennis",
+//     45,
+//     "hazel", 'grey'
 // );
-
-// console.log(usps)
-
-// class Chef extends Person {
-
-// }
-
-// const emeril = new Chef(
-//     "Emeril",
-//     52,
-//     "green"
-// );
-
-// console.log(emeril)
-
-// //FACTORY FOR POSTALWORKER
-
-// function createPostalWorker(name, age, eyeColor) {
-//     return new PostalWorker(name, age, eyeColor)
-// }
-
-// const worker1 = createPostalWorker('Michael', 48, 'brown')
-// const worker2 = createPostalWorker('Noah', 18, 'brown')
-
-// console.log(worker1)
 // console.log(worker2)
 
-// //FACTORY FOR CHEF
+class Chef extends Person {
+    constructor(name, age, eyeColor, weight) {
+        super(name, age, eyeColor);
+        this.weight = weight
+    }
+}
 
-// function createChef(name, age, eyeColor) {
-//     return new Chef(name, age, eyeColor)
-// }
+const chef1 = new Chef(
+    "Denise",
+    29,
+    "brown", 'None of your damn business'
+);
 
-// const chef1 = createChef('Laureen', 39, 'brown')
-// const chef2 = createChef('Farah', 18, 'brown')
-
-// console.log(chef1)
-// console.log(chef2)
+const chef2 = new Chef(
+    "Dennis",
+    29,
+    "brown", 218
+);
+console.log(chef1)
